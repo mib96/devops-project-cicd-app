@@ -22,4 +22,4 @@ Go to test project directory and run:
 
 ### Produce publishable artifacts
 
-TBD
+T
