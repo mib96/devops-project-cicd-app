@@ -2,7 +2,7 @@
 
 ### Step 1:
 
-`create and cofigure EC2 Instance on AWS`
+`create and configure EC2 Instance on AWS`
 
 ### Step 2:
 
