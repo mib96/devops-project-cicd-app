@@ -14,4 +14,8 @@
 
 ### Step 4:
 
+`add Jenkinsfile to repository`
+
+### Step 5:
+
 `integrate Jenkins with Github`
