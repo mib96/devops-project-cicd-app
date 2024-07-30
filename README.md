@@ -6,8 +6,12 @@
 
 ### Step 2:
 
-`install jenkins on EC2 Instance`
+`install Jenkins on EC2 Instance`
 
 ### Step 3:
 
 `create pipeline in Jenkins`
+
+### Step 4:
+
+`integrate Jenkins with Github`
