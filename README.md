@@ -2,7 +2,7 @@
 
 ### Step 1:
 
-`create and configure EC2 Instance on AWS`
+`create and configure EC2 Instance on AWS` AAA
 
 ### Step 2:
 
