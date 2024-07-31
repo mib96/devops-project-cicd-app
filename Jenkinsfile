@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Build..'
-                echo 'Password is $PASSWORD'
+                echo "Password is $PASSWORD"
             }
         }
         stage('Test') {
