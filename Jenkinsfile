@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Build..'
-                echo 'Password is ${MB_CRED}
+                echo 'Password is ${MB_CRED}'
             }
         }
         stage('Test') {
