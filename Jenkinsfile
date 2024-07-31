@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PASSWORD="${MB_CRED}"
+        PASSWORD = credentials('MB_CRED')
     }
     stages {
         stage('Build') {
