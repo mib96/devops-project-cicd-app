@@ -1,11 +1,13 @@
 pipeline {
     agent any
-
+    environment {
+        PASSWORD="${MB_CRED}"
+    }
     stages {
         stage('Build') {
             steps {
                 echo 'Build..'
-                echo 'Password is ${MB_CRED}'
+                echo 'Password is $PASSWORD'
             }
         }
         stage('Test') {
