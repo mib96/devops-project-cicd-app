@@ -9,7 +9,7 @@ pipeline {
         stage('Test') { 
             steps {
                 sh "dotnet restore"
-                sh "dotnet build --configuration Release"
+                sh "dotnet build --configuration Release ./..."
             }
         }
         stage('Deploy') { 
