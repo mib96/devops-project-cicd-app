@@ -8,9 +8,9 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh "./..."
+                git "https://github.com/mib96/devops-project-cicd-app.git"
                 sh "dotnet restore"
-                sh "dotnet build"
+                sh "dotnet build ./..."
             }
         }
         stage('Deploy') { 
