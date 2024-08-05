@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh "dotnet restore"
+                sh "dotnet restore ./..."
             }
         }
         stage('Deploy') { 
