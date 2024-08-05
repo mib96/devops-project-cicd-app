@@ -10,7 +10,7 @@ pipeline {
             steps {
                 git "https://github.com/mib96/devops-project-cicd-app.git"
                 sh "dotnet restore"
-                sh "dotnet build ./..."
+                sh "dotnet run ./..."
             }
         }
         stage('Deploy') { 
