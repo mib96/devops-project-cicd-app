@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                bat "dotnet restore"
-                bat "dotnet build --configuration Release"
+                sh "dotnet restore"
+                sh "dotnet build --configuration Release"
             }
         }
         stage('Deploy') { 
