@@ -1,11 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage('Build') { 
+        stage('Test') { 
             steps {
-                sh """
-                dotnet build ./...
-            """
+                sh "dotnet test --no-restore --configuration Release"
             }
         }
     }
