@@ -9,8 +9,7 @@ pipeline {
         stage('Test') { 
             steps {
                 sh "dotnet restore"
-                sh "cd /src/WeatherForecastApi.ApiService/"
-                sh "dotnet build --configuration Release"
+                sh "dotnet build /src/WeatherForecastApi.ApiService/WeatherForecastApi.ApiService.csproj"
             }
         }
         stage('Deploy') { 
