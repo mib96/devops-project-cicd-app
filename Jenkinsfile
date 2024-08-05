@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh "dotnet restore"
+                sh """
+                cd /src/WeatherForecastApi.ApiService/
+                dotnet restore
+            """
             }
         }
     }
