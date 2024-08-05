@@ -1,14 +1,15 @@
 pipeline {
     agent any 
     stages {
-        stage('Build') { 
+        stage('Checkout') { 
             steps {
-                echo 'Build'
+                checkout scm
             }
         }
         stage('Test') { 
             steps {
-                echo 'Test'
+                bat "dotnet restore"
+                bat "dotnet build --configuration Release"
             }
         }
         stage('Deploy') { 
