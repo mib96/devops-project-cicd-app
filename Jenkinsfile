@@ -8,8 +8,9 @@ pipeline {
         }
         stage('Test') { 
             steps {
+                sh "./..."
                 sh "dotnet restore"
-                sh "dotnet build /src/WeatherForecastApi.ApiService/WeatherForecastApi.ApiService.csproj"
+                sh "dotnet build"
             }
         }
         stage('Deploy') { 
