@@ -6,6 +6,8 @@
 
 ## Commands
 
+The below commands are assumed to be executed in the context of `src` directory (unless stated otherwise).
+
 ### Running app
 
 `dotnet run`
@@ -20,6 +22,8 @@ Go to test project directory and run:
 
 `dotnet test`
 
-### Produce publishable artifacts
+### Producing publishable artifacts
 
-TBD
+`dotnet publish WeatherForecastApi.Web -c Release --output ./build_output`
+
+The output will be located in `src/build_output` directory.
