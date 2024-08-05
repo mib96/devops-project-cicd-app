@@ -1,9 +1,27 @@
 pipeline {
-    agent any 
+    agent any
+
     stages {
-        stage('Test') { 
+        stage('Checkout') {
             steps {
-                sh "cd src/WeatherForecastApi.ApiService && dotnet restore"
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                script {
+                    sh "cd src/WeatherForecastApi.ApiService && dotnet restore"
+                    sh "dotnet build --configuration Release"
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                script {
+                    sh "dotnet test --no-restore --configuration Release"
+                }
             }
         }
     }
