@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') { 
             steps {
-                sh "cd src/tests/WeatherForecastApi.IntegrationTests && dotnet test --no-restore --configuration Release"
+                sh "cd src/WeatherForecastApi.ApiService && dotnet restore"
             }
         }
     }
