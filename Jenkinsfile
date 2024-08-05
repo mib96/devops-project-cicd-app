@@ -1,19 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage('Checkout') { 
+        stage('Build') { 
             steps {
-                checkout scm
-            }
-        }
-        stage('Test') { 
-            steps {
-                sh "dotnet restore ./..."
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                echo 'Deploy' 
+                sh "dotnet restore"
             }
         }
     }
