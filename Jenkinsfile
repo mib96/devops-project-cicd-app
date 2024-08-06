@@ -28,5 +28,15 @@ pipeline {
                 }
             }
         }    
+        stage('Publish') {
+            steps {
+                script {
+                    sh """
+                    cd src/
+                    dotnet publish WeatherForecastApi.Web -c Release --output ./build_output
+                    """
+                }
+            }
+        }  
     }
 }
