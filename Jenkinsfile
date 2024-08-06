@@ -18,5 +18,15 @@ pipeline {
                 }
             }
         }
+        stage('Test') {
+            steps {
+                script {
+                    sh """
+                    cd src/tests/WeatherForecastApi.IntegrationTests
+                    dotnet test
+                    """
+                }
+            }
+        }    
     }
 }
