@@ -11,7 +11,11 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh "cd src/WeatherForecastApi.ApiService && dotnet restore"
+                    sh """
+                    cd src/WeatherForecastApi.ApiService
+                    dotnet restore
+                    dotnet build
+                    """
                 }
             }
         }
