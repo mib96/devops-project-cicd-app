@@ -13,7 +13,6 @@ pipeline {
                 script {
                     sh """
                     cd src/WeatherForecastApi.ApiService
-                    dotnet restore
                     dotnet build
                     """
                 }
