@@ -1,7 +1,5 @@
 # DevOps Project CI/CD Jenkins
 
-[![.NET](https://github.com/mib96/devops-project-cicd-app/actions/workflows/dotnet.yml/badge.svg)](https://github.com/mib96/devops-project-cicd-app/actions/workflows/dotnet.yml)
-
 ### Step 1:
 
 `create and configure EC2 Instance on AWS` 
