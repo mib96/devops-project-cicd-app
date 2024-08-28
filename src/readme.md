@@ -1,7 +1,5 @@
 # WeatherForecastApi
 
-[![.NET](https://github.com/mib96/devops-project-cicd-app/actions/workflows/dotnet.yml/badge.svg)](https://github.com/mib96/devops-project-cicd-app/actions/workflows/dotnet.yml)
-
 ## Prerequisites
 
 * .NET 8 SDK
