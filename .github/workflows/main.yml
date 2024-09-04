@@ -42,7 +42,7 @@ jobs:
 
     - name: Upload to S3
       run: | 
-        aws s3 cp ./publish.zip s3://appdeploygit/githubactions/ --recursive
+        aws s3 cp ./publish s3://appdeploygit/githubactions/ --recursive
 
     - name: Deploy to EC2 instance
       run: |
