@@ -28,9 +28,6 @@ jobs:
     
     - name: Publish
       run: dotnet publish src/WeatherForecastApi.Web -c Release --output ./publish
-
-    - name: ZIP publish
-      run: Compress-Archive -Path ./publish -DestinationPath ./publish/publish.zip
     
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
